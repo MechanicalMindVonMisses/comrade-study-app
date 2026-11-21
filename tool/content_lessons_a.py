@@ -1,0 +1,413 @@
+"""Modules I–III: from allies to comrades, survivors and systems, the generic comrade.
+
+All lesson prose is original study text about Jodi Dean, Comrade: An Essay on
+Political Belonging (Verso, 2019). Section numbers (§) refer to this app's
+reading-room index, which follows the book's chapters and sub-headings."""
+
+from content_library import B, EFLUX, MIA
+
+FISHER = "https://www.opendemocracy.net/en/opendemocracyuk/exiting-vampire-castle/"
+
+modules = [
+    {"id": "relation", "index": "I", "title": "A relation, not an identity", "subtitle": "Chapter One · the opening",
+     "description": "Meet the comrade as a term of address, a figure of belonging and a carrier of expectations—and see why Dean ties it to the party and to common time."},
+    {"id": "survivors", "index": "II", "title": "Survivors, systems, allies", "subtitle": "Chapter One · the diagnosis",
+     "description": "Follow Dean’s diagnosis of a left caught between wounded identities and unaffectable systems, and her critique of allyship as its symptom."},
+    {"id": "generic", "index": "III", "title": "The generic comrade", "subtitle": "Chapter Two · sex, race, history",
+     "description": "Test the claim that the comrade is generic against the strongest objections: that it is male, that it is white."},
+    {"id": "theses", "index": "IV", "title": "Negativity and the first theses", "subtitle": "Chapters Two–Three",
+     "description": "From Platonov’s destitute comrades to Kollontai and Gorky: the comrade as zero-level, as utopian sameness, and as anyone but not everyone."},
+    {"id": "fidelity", "index": "V", "title": "Generic, not unique", "subtitle": "Chapter Three · theses three and four",
+     "description": "Separate the comrade from kin, neighbor, citizen and friend; see why the individual is its Other; and read fidelity through Badiou."},
+    {"id": "endings", "index": "VI", "title": "Discipline and its endings", "subtitle": "Chapters Three–Four",
+     "description": "The four attributes of the comrade, the dangers of discipline, and the four ways comradeship ends—then weigh the book’s critics."},
+]
+
+lessons = [
+    # ───────────────────────────── I. RELATION ─────────────────────────────
+    {
+        "id": "joke-and-room", "number": 1, "moduleId": "relation",
+        "title": "A joke and a room", "eyebrow": "Start here · Chapter One · §§1–2", "duration": 12,
+        "description": "Dean opens with a presidential joke and a piece of etymology. Together they show what ‘comrade’ does: it names a relation of people on the same side and the expectations that come with it.",
+        "objectives": [
+            "State the three registers in which Dean uses ‘comrade’",
+            "Explain why Obama’s joke works only if he is not a comrade",
+            "Connect the etymology of camera to ‘supported cover’",
+        ],
+        "sections": [
+            {"heading": "Three readings of a joke", "paragraphs": [
+                "At the 2016 White House Correspondents’ Dinner, Barack Obama teased Bernie Sanders for distancing himself, adding that this is not something one does to one’s comrade. Dean offers three readings. It might be red-baiting, a reminder that Sanders called himself a socialist. It might be a reminder that Sanders was not a Democrat and so not Obama’s party comrade. Or Obama might be ironically casting himself as Sanders’s comrade—the role the right had long assigned him.",
+                "The third reading carries the point. Everyone in the room knew Obama did not share Sanders’s politics. The joke worked because it invoked a norm the audience understood: comrades share a political horizon, and so they can expect solidarity from each other. You do not distance yourself from your comrades.",
+            ]},
+            {"heading": "Comrade as relation and expectation", "paragraphs": [
+                "From the joke Dean extracts her working definition. ‘Comrade’ indexes a political relation and a set of expectations for action toward a common goal. It stresses the sameness of those on the same side: whatever their differences, comrades stand together, and that binding collectivizes and directs action toward a shared future.",
+                "Throughout the book she uses the word in three registers at once: as a term of address, as a figure of political belonging, and as a carrier of expectations. For communists, the horizon that gives the relation its content is an egalitarian society freed from private property and organized by the free association and collective decisions of the producers.",
+            ], "callout": "A comrade is not a kind of person but a relation between people on the same side."},
+            {"heading": "From chamber to supported cover", "paragraphs": [
+                "The word is older than socialism. In Romance languages it first named someone who shared a room; the French camarade referred to a barracks room shared by soldiers. All of these go back to the Latin camera, a room, chamber or vault.",
+                "Dean draws a structural lesson from the vault: it is a repeatable form that produces an inside separate from an outside and holds a space open for those beneath it. Sharing such a space generates closeness and an expectation of solidarity that divides one side from the other. Comradeship, she concludes, is a political relation of supported cover.",
+            ]},
+        ],
+        "example": {"title": "Work it through: who can you count on?",
+                    "body": "Imagine a tenants’ union in one building. Some neighbours sign a petition and are never seen again; others attend every meeting, cover each other’s door-knocking shifts and show up when one household faces eviction. Dean would say the second group has entered a relation with expectations attached—not because they are friends or share an identity, but because they are on the same side of the same fight."},
+        "distinction": "Don’t read the etymology as an argument that comrades must be physically close or intimate. Dean uses the vault as a figure for a generic, repeatable structure that holds a political space open. Later chapters stress that comrades are often far apart, and that the relation differs from friendship and neighbourliness.",
+        "source": {"label": "Comrade, ch. 1 · §§1–2 (Verso, 2019)", "url": B},
+        "furtherReading": {"label": "Dean · Four Theses on the Comrade (e-flux, 2017)", "url": EFLUX},
+        "quiz": [
+            {"question": "Why, on Dean’s third reading, does Obama’s joke work?",
+             "options": ["Because Obama really was a member of a socialist party",
+                         "Because everyone knew he did not share Sanders’s politics, so the norm of solidarity was being invoked ironically",
+                         "Because Sanders had joined the Democratic Party",
+                         "Because the audience did not know what ‘comrade’ meant"],
+             "answer": 1, "explanation": "The joke relies on the shared understanding that comrades share a politics and owe each other solidarity—and that Obama was not Sanders’s comrade."},
+            {"question": "What does Dean take from the etymology of camera?",
+             "options": ["That comrades must live together",
+                         "That the word was originally military and therefore authoritarian",
+                         "That comradeship is a political relation of supported cover, an inside held open against an outside",
+                         "That comrade is a Russian word"],
+             "answer": 2, "explanation": "The vault produces and holds open a shared space; Dean calls comradeship a political relation of supported cover."},
+        ],
+    },
+    {
+        "id": "count-on", "number": 2, "moduleId": "relation",
+        "title": "Those you can count on", "eyebrow": "Chapter One · §§3–4", "duration": 15,
+        "description": "Comrades are the people you can count on even when you disagree or dislike each other. Dean explains this through accountability and the psychoanalytic idea of the ego ideal.",
+        "objectives": [
+            "Explain why Dean treats comradeship as instrumental and long-term",
+            "Describe accountability as seeing yourself through your comrades’ eyes",
+            "Distinguish the ego ideal from the ideal ego",
+        ],
+        "sections": [
+            {"heading": "An anchor, not an ad-hoc group", "paragraphs": [
+                "Comrades tie themselves together for a common purpose: if we want to win, we have to act together. Dean quotes Angela Davis explaining why she joined the Communist Party. Davis wanted an anchor and comrades who shared an ideology; she was tired of loose groups that fell apart at the first difficulty and knew the fight had to be waged collectively by an organization with permanence.",
+                "Dean’s gloss is simple: comrades are those you can count on. They share enough of a commitment to do more than one-off actions, and so together they can fight a long fight.",
+            ]},
+            {"heading": "Accountable to each other", "paragraphs": [
+                "Comradeship is voluntary, but what it asks is not always what we would choose. Vivian Gornick’s interviews with former members of the CPUSA include a woman who hated selling papers and canvassing but did it anyway, because she could not have faced her comrades the next day. They were accountable to each other.",
+                "Being accountable means seeing your own actions through another’s eyes. Are you letting your comrades down, or doing work they would respect? The relation reaches back into each person and changes how they judge themselves.",
+            ], "callout": "Comrades can count on each other even when they don’t like each other."},
+            {"heading": "Ego ideal versus ideal ego", "paragraphs": [
+                "Dean borrows a Lacanian distinction, via Žižek. The ideal ego is an imaginary self-image—how I would like to appear: the brilliant orator, the fearless militant. The ego ideal is symbolic: the point from which I observe and judge myself. In her earlier book Crowds and Party she treated the good comrade as an ideal ego; here she stresses the comrade as ego ideal.",
+                "This matters for the whole book. The comrade is less a portrait one tries to resemble than a perspective one adopts, produced by belonging to a side and working back on those who belong to it. Chapter One will later use the same distinction against the ally, who stays at the imaginary level.",
+            ]},
+        ],
+        "example": {"title": "Work it through: the Monday meeting",
+                    "body": "A volunteer is tired and would rather skip the Monday phone bank. What gets her there? Not an image of herself as a hero (ideal ego), but the thought of how the others will see her if she leaves them short-handed (ego ideal). The Accountability lab models this: participation that depends only on individual comfort decays, participation that responds to others’ presence can hold up."},
+        "distinction": "‘Accountable’ is easily heard as surveillance or guilt. Dean’s claim is narrower: shared commitment produces a perspective from which people evaluate their own work, and this is what makes long-term collective action possible. Whether that perspective becomes punitive is a question she takes up in chapters three and four.",
+        "source": {"label": "Comrade, ch. 1 · §§3–4 (Verso, 2019)", "url": B},
+        "furtherReading": {"label": "Dean · Four Theses on the Comrade (e-flux, 2017)", "url": EFLUX},
+        "lab": "accountability",
+        "quiz": [
+            {"question": "In Dean’s usage, what is the comrade as ego ideal?",
+             "options": ["The perspective from which party members assess their own work",
+                         "An idealized image of oneself as a heroic militant",
+                         "The party leader whom members imitate",
+                         "A personal friend who gives advice"],
+             "answer": 0, "explanation": "The ego ideal is the symbolic point from which one judges oneself; the ideal ego is the imaginary self-image."},
+            {"question": "Why did the woman Gornick interviewed keep selling papers she hated selling?",
+             "options": ["She was paid by the party",
+                         "She feared expulsion",
+                         "She believed selling papers was the most effective tactic",
+                         "She could not have faced her comrades otherwise—they were accountable to each other"],
+             "answer": 3, "explanation": "Her motive was accountability to her comrades, which Dean reads as the ego-ideal function of comradeship."},
+        ],
+    },
+    {
+        "id": "horizon-party-time", "number": 3, "moduleId": "relation",
+        "title": "Horizon, party and common time", "eyebrow": "Chapter One · §§5–9", "duration": 18,
+        "description": "Dean places the comrade inside two larger arguments—communism as the horizon of left politics and the party as its necessary form—then shows how comradeship changes work, time and address.",
+        "objectives": [
+            "Describe the negative and positive sides of the communist horizon",
+            "Summarize Dean’s case against the left’s rejection of the party",
+            "Explain how comradeship revalues work and time, and why address can be both joyful and disciplining",
+        ],
+        "sections": [
+            {"heading": "The communist horizon", "paragraphs": [
+                "To see the political horizon as communist is to foreground the struggle of the proletarianized against the determination of life by markets, value, a division of labour by sex and race, imperialism and neocolonialism. Dean finds this horizon in struggles against police violence, around pipelines and water, over debt and public services, and in LGBTQ fights against discrimination. It is international: a negation of the global capitalist present.",
+                "Communism also has a positive side: a system of production organized around social needs, collectively decided by the producers, and attentive to how people treat each other and the world. Building it takes more than resistance and riot.",
+            ]},
+            {"heading": "Against ‘no party!’", "paragraphs": [
+                "Dean argues that thinkers as different as Negri and Badiou converge on rejecting the party, which is dismissed as authoritarian, outdated or unsuited to networks. She calls this thirty-year-old consensus a left dogmatism: it ignores what association does to those who struggle together and relies on a fantasy of the party as a totalitarian machine.",
+                "The movements of the squares in Greece and Spain, and the limits of Occupy, renewed interest in a form that can scale and outlast the crowd. A theory of the comrade contributes by looking past leaders and led to the effects of political belonging on everyone on the same side.",
+            ], "callout": "Comrade attends to what belonging does to those who belong—not only to who leads."},
+            {"heading": "Work, time and the force of address", "paragraphs": [
+                "Comradeship revalues work. Echoing Marx’s line that under communism labour becomes life’s prime want, Dean says comrades want to do political work because they see its value through each other’s eyes. Against Bernard Aspe’s diagnosis of a lost ‘common time’—time enclosed and measured by apps and trackers—common struggle produces a collective change in capacities.",
+                "Address matters too. Frank Wilderson recalls beaming when Chris Hani called him comrade, and later addressing Nelson Mandela as comrade to remind him of the militancy he had shed. The same word welcomes and disciplines. Discipline and joy are two sides of one coin, and comrade works as a utopian form in Kathi Weeks’s sense: it estranges us from the present and opens hope for the future.",
+            ]},
+        ],
+        "example": {"title": "Work it through: an ordinary week",
+                    "body": "Count the hours in a week that belong to anyone but the boss or the feed: commute, shifts, scrolling. Now add a weekly union meeting, a shared meal after a picket, a reading group. Dean’s claim is not that these hours are more pleasant, but that they are common: time produced and enjoyed together, outside capitalist measurement."},
+        "distinction": "Dean is not saying every left organization should become a Leninist vanguard overnight, nor that parties are free of the problems critics name. Her target is the reflexive dismissal of the party form, which she thinks prevents the left from learning from a century of organizers’ experience.",
+        "source": {"label": "Comrade, ch. 1 · §§5–9 (Verso, 2019)", "url": B},
+        "furtherReading": {"label": "Marx · Critique of the Gotha Programme (1875)", "url": MIA + "marx/works/1875/gotha/ch01.htm"},
+        "quiz": [
+            {"question": "What does Dean call the left’s thirty-year rejection of the party form?",
+             "options": ["A necessary correction to Stalinism", "A healthy pluralism",
+                         "A left dogmatism that has gotten us nowhere", "An unavoidable effect of the internet"],
+             "answer": 2, "explanation": "She calls rejection of the party the left’s dogmatism of the last thirty years."},
+            {"question": "What does Wilderson’s address to Mandela as ‘comrade’ illustrate?",
+             "options": ["That comrade is only a polite greeting",
+                         "That the word’s equalizing insistence can also be a disciplining reminder of what is expected",
+                         "That Mandela rejected communism",
+                         "That comrade was banned in South Africa"],
+             "answer": 1, "explanation": "Calling Mandela ‘comrade’ stitched him back into the militancy he had shed: address can impose expectations."},
+        ],
+    },
+    # ─────────────────────────── II. SURVIVORS ───────────────────────────
+    {
+        "id": "survivors-systems", "number": 4, "moduleId": "survivors",
+        "title": "Survivors and systems", "eyebrow": "Chapter One · Survivors and Systems · §§10–11", "duration": 15,
+        "description": "Two opposite tendencies dominate contemporary left culture, Dean argues: attachment to survivor identities and fascination with vast systems. Both make class struggle unintelligible.",
+        "objectives": [
+            "Describe the survivor and system tendencies",
+            "Link them to neoliberalism and communicative capitalism",
+            "Explain why Dean says the pair yields a left devoid of politics",
+        ],
+        "sections": [
+            {"heading": "Two tendencies", "paragraphs": [
+                "On one side are survivors: people left with nothing to cling to but identities forged in struggles to survive, often attached to the pain of those struggles. This emphasis appears on social media, in universities and in some activist networks, voiced through identity and appeals to allyship.",
+                "On the other side are systems: geology, extinction, algorithms, ‘hyperobjects’, processes so vast that we can barely conceive of them, let alone affect them. This emphasis dominates aesthetic and theoretical venues. Accounts of systems tend to have no survivors in them; when people appear, they appear as the problem.",
+            ]},
+            {"heading": "Neoliberalism’s displacement of politics", "paragraphs": [
+                "Dean ties both tendencies to neoliberal dismantling of social institutions and to the networked, personalized media she calls communicative capitalism. Jobs, unions, housing and schools have become insecure, while ideology describes this as choice and personal responsibility.",
+                "Carl Schmitt said liberalism replaced politics with ethics and economics. Dean proposes a neoliberal variant: responsibilized individuals on one side, determining systems on the other. Sociologist Jennifer Silva’s interviews with working-class young adults show how survival, against the odds and alone, can become the very core of a dignified identity.",
+            ], "callout": "Survivors persist in unlivable conditions; systems are watched and mourned. Neither is changed."},
+            {"heading": "A left devoid of politics", "paragraphs": [
+                "Both tendencies, Dean argues, make class struggle—divisive struggle over common conditions for an egalitarian future—unintelligible. In its place we get either the fragmenting assertion of particular survival or an obsession with the coming impossibility of anyone surviving.",
+                "The comrade is her alternative to both. It is neither a unique survivor nor a speck within an impersonal process, but one of many on the same side, whose collective capacity is the missing middle term.",
+            ]},
+        ],
+        "example": {"title": "Work it through: two headlines",
+                    "body": "One post tells a personal story of getting through a medical debt crisis alone; another shares a chart of planetary carbon budgets with the caption ‘we’re doomed’. Dean would ask what is missing from both: an organized ‘we’ that could change the conditions—say, a campaign for public health care or a union fighting a fossil employer. The Scale lab lets you see that gap."},
+        "distinction": "Dean does not deny that trauma is real or that planetary systems matter. Her claim is about political form: when these become the frames for left thought, they displace the question of collective agency. Critics reply that she underestimates how identity-based movements have built collective power.",
+        "source": {"label": "Comrade, ch. 1 · §§10–11 (Verso, 2019)", "url": B},
+        "furtherReading": {"label": "Dean · The Anamorphic Politics of Climate Change (e-flux 69, 2016)", "url": "https://www.e-flux.com/journal/69/60586/the-anamorphic-politics-of-climate-change/"},
+        "lab": "scale",
+        "quiz": [
+            {"question": "According to Dean, what do the survivor and system tendencies have in common?",
+             "options": ["Both are right-wing", "Both reject social media",
+                         "Both come from the Communist Party", "Both render class struggle unintelligible"],
+             "answer": 3, "explanation": "Each in its own way displaces the divisive collective struggle over common conditions."},
+            {"question": "How does Dean adapt Schmitt’s claim that liberalism replaces politics with ethics and economics?",
+             "options": ["Neoliberalism displaces politics into an opposition between responsibilized individuals (survivors) and determining systems",
+                         "Neoliberalism restores politics through markets",
+                         "Neoliberalism replaces economics with ethics",
+                         "Neoliberalism abolishes the individual"],
+             "answer": 0, "explanation": "Her version: self-reliant survivors on one side, impersonal systems on the other."},
+        ],
+    },
+    {
+        "id": "four-openings", "number": 5, "moduleId": "survivors",
+        "title": "Four openings, one symptom", "eyebrow": "Chapter One · §§12–13", "duration": 14,
+        "description": "Despite the impasse, Dean sees four openings for politics. She then argues that the sense that ‘comrade’ sounds alien is a symptom of defeat, and that attachment to identity is a fantasy of wholeness.",
+        "objectives": [
+            "List the four openings Dean identifies",
+            "Explain why the strangeness of ‘comrade’ is symptomatic rather than descriptive",
+            "Distinguish identities as sites of struggle from grounds of struggle",
+        ],
+        "sections": [
+            {"heading": "Number, identity, the generic, the party", "paragraphs": [
+                "First, communicative capitalism runs on number—big data, followers, shares—and movements too invoke the many; the power of the people lies in the many over the few, if they organize. Second, identity is losing its ability to ground left politics: no political conclusion follows from an identity, and the right increasingly runs its own identity politics.",
+                "Third, the flood of demands on attention has produced generic shortcuts—hashtags, memes—that let local struggles see themselves as instances of something larger. Fourth, movements have hit the limits of horizontality and allyship, prompting renewed interest in parties and in organizing the many.",
+            ]},
+            {"heading": "Why ‘comrade’ sounds jarring", "paragraphs": [
+                "In the US the term can seem alien; in Europe, too Stalinist. Dean grants this some merit but reads it historically: the hesitation reflects the defeat of the Soviet Union, intense neoliberalization and a cult of individual identity in a post-political setting.",
+                "What the left has celebrated—the personal as the privileged site of politics—is for Dean the symptom of its defeat: the erosion of working-class power and its parties. That ‘comrade’ doesn’t ring true describes a problem to be solved and an organization to be built.",
+            ], "callout": "The sense that ‘comrade’ is out of place is evidence of what has been lost, not of what is impossible."},
+            {"heading": "Identity: a site, not a ground", "paragraphs": [
+                "When identity is all that is left, holding on to it makes sense: at least one survives. But Silva found that attachment to survivor identity can leave people unable to criticize the conditions they struggle under, so that survival itself looks like the political achievement.",
+                "Dean calls this attachment pathological in a psychoanalytic sense: an attachment to a fantasy of wholeness, a pure position guaranteeing that we are right. Identities are split and contested—sites of class struggle. That someone is a woman, black, transgender or a survivor tells us nothing about their politics.",
+            ]},
+        ],
+        "example": {"title": "Work it through: a hashtag",
+                    "body": "A hashtag about a local water crisis spreads to dozens of cities facing contaminated supplies. Nobody reads every post, but the shared name lets people see their tap water as one case of a larger pattern. That is Dean’s third opening: the generic as a container for many particular contents—a first step toward the generic comrade."},
+        "distinction": "Saying identities are ‘sites, not grounds’ is not saying they are unreal or unimportant. Dean’s point is that political conclusions must be built through struggle and cannot be read off a category; chapter two shows how the CPUSA fought oppression by race and sex without making identity the basis of belonging.",
+        "source": {"label": "Comrade, ch. 1 · §§12–13 (Verso, 2019)", "url": B},
+        "furtherReading": {"label": "Dean · Four Theses on the Comrade (e-flux, 2017)", "url": EFLUX},
+        "quiz": [
+            {"question": "Which of these is NOT one of Dean’s four openings?",
+             "options": ["The power of number in communicative capitalism",
+                         "A return of stable national identities that can ground left politics",
+                         "Generic markers such as hashtags and memes",
+                         "Movements hitting the limits of horizontality and allyship"],
+             "answer": 1, "explanation": "Her second opening is the opposite: identity is losing its ability to ground a left politics, and nationalism is the right’s identity politics."},
+            {"question": "What does Dean mean by calling identities sites rather than grounds of struggle?",
+             "options": ["Identities should be abolished immediately",
+                         "Identities determine politics",
+                         "Identities are split and contested, so no politics follows automatically from them",
+                         "Identities matter only online"],
+             "answer": 2, "explanation": "An identity tells us nothing about someone’s politics; politics has to be built."},
+        ],
+    },
+    {
+        "id": "ally-symptom", "number": 6, "moduleId": "survivors",
+        "title": "The ally as symptom", "eyebrow": "Chapter One · From Allies to Comrades · §§14–16", "duration": 18,
+        "description": "Dean reads popular how-to-be-an-ally guides as lifestyle manuals that turn politics into self-work. The ally is hierarchical, specific and acquiescent; the comrade is egalitarian, generic and utopian.",
+        "objectives": [
+            "Describe the ‘field of operation’ the ally guides imagine",
+            "Explain ‘punishment without discipline’",
+            "Distinguish practical alliances from allyship as a model of politics",
+        ],
+        "sections": [
+            {"heading": "Allyship as a lifestyle manual", "paragraphs": [
+                "In US activist circles an ally is usually a privileged person who wants to help the oppressed. The guides that circulate online insist that allyship is a process, not an identity, and give lists of dos and don’ts. Dean compares them to decluttering books and clean-eating tips: techniques for navigating a neoliberal environment of privilege and oppression.",
+                "Their imagined field of action is social media, donations, hiring, campus conversations and sometimes protests—but above all the ally’s own feelings and attitudes. Reading one guide, Dean notes that struggles are treated like possessions the ally takes on while being told they have no right to them; what the politics actually is remains unstated.",
+            ]},
+            {"heading": "Imaginary allies, punishment without discipline", "paragraphs": [
+                "One guide says the more uncomfortable and defensive you feel, the more likely you are on the right track. Dean reads this as an act of the self on the self: the ally is imaginary, an ideal ego, not a symbolic ego ideal. The space for politics shrinks, so the ally acts on what is left—social media and themselves.",
+                "The injunction to educate yourself makes learning a solitary act of consumption, cut off from discussion or a political tradition. The would-be ally can be scolded, but no one is responsible for guidance: punishment without discipline. ‘Ally’ is not a term of address; it marks a limit—you will never be one of us. And the advice to focus on those who share your identity treats identities as fixed little sovereign states.",
+            ], "callout": "Where the ally is hierarchical, specific and acquiescent, the comrade is egalitarian, generic and utopian."},
+            {"heading": "Alliances yes, allyship no", "paragraphs": [
+                "Dean is explicit that the left needs alliances. A struggle with communism as its horizon will involve tactical alliances among classes, sectors and tendencies, and allies may become comrades. Rejecting alliances would be absurd. What she rejects is allyship as the model for struggles against oppression and exploitation.",
+                "She closes with Mark Fisher’s call to relearn comradeship and solidarity instead of doing capital’s work by condemning each other. If attachment to individual identity is the form of our political incapacity, recognizing it opens collective capacities. Her examples will come mostly from the CPUSA: if even that individualist, racist, Cold War culture produced comrades, the form is available to us.",
+            ]},
+        ],
+        "example": {"title": "Work it through: two responses to a racist remark",
+                    "body": "At work, a manager makes a racist joke. The ally-guide response: privately examine your discomfort, decide not to centre yourself, perhaps post about it later. The comrade response Dean has in mind: raise it with co-workers, take it to the union, and act together so that no one faces retaliation alone. The first changes how one person feels; the second changes the relation of forces."},
+        "distinction": "This chapter is polemical and selective: Dean analyses popular online guides, not the full literature on solidarity. Many organizers who use ‘ally’ mean something close to her ‘comrade’. Read her as attacking a model of politics—individual, attitudinal, identity-bound—rather than every person who uses the word.",
+        "source": {"label": "Comrade, ch. 1 · §§14–16 (Verso, 2019)", "url": B},
+        "furtherReading": {"label": "Mark Fisher · Exiting the Vampire Castle (2013)", "url": FISHER},
+        "quiz": [
+            {"question": "What does Dean mean by ‘punishment without discipline’?",
+             "options": ["The would-be ally can be scolded and shamed, but no one takes responsibility for concrete guidance or training",
+                         "Allies are expelled from parties",
+                         "Allies punish oppressors",
+                         "Discipline is always a form of punishment"],
+             "answer": 0, "explanation": "Telling someone to ‘Google it’ relieves the scolder of any duty to provide guidance; there is blame without a collective practice."},
+            {"question": "Which statement matches Dean’s position on alliances?",
+             "options": ["All alliances betray the working class",
+                         "Allies and comrades are the same thing",
+                         "The left should only work with people who share its identity",
+                         "Tactical alliances are necessary, but allyship should not be the model for struggle"],
+             "answer": 3, "explanation": "She calls rejecting alliances absurd; her target is allyship as the form and model of politics."},
+        ],
+    },
+    # ─────────────────────────── III. GENERIC ───────────────────────────
+    {
+        "id": "comrade-woman", "number": 7, "moduleId": "generic",
+        "title": "Comrade Woman", "eyebrow": "Chapter Two · Comrade Woman · §§17–21", "duration": 18,
+        "description": "Is the comrade a man? Dean answers with history—Kollontai, Zetkin, the women of the CPUSA, the Mary Inman controversy—and then with theory: comrade is a container indifferent to its contents.",
+        "objectives": [
+            "Explain Dean’s ‘speculative-compositive’ method",
+            "Summarize the historical case that comrades are women and women are comrades",
+            "Explain why Dean reads the masculinity worry as a fear of losing specificity",
+        ],
+        "sections": [
+            {"heading": "Scavenging the ruins", "paragraphs": [
+                "Chapter two answers the worry that comrade carries a masculine, white imaginary. Dean calls her method speculative-compositive: rather than a linear history or a critique of actually existing socialisms, she extracts examples and salvages them for present struggles, scavenging the ruins of communism for old hopes and lessons.",
+                "Her first answer is a list—Luxemburg, Davis, Kollontai, Claudia Jones, Zetkin and many more—but she notes that proper names miss the relational point. Better evidence is the mass of women in communist movements and the commissions, conferences and publications that organized them, such as the 1907 International Conference of Socialist Women and Lenin’s insistence to Zetkin that a woman communist is a party member with equal rights and duties.",
+            ]},
+            {"heading": "Red feminism and the Inman affair", "paragraphs": [
+                "In the CPUSA, women reached 40 percent of members during the 1930s and parity in 1944. Following Engels, party pamphlets traced women’s subordination to private property and demanded equal pay, maternity insurance, free childcare and legal birth control. Black communist women such as Louise Thompson Patterson and Claudia Jones developed the theory of black women’s triple exploitation—as workers, as women and as black people.",
+                "Drawing on Kate Weigand’s Red Feminism, Dean revisits Mary Inman, who argued in 1940 that housework is productive labour. The party rejected the claim—Avram Landy answered that Marxism is a theory of exploitation, not of usefulness—yet leaders still treated Inman as a comrade. Dean argues that the later feminist story of a party hostile to women’s issues repeats Inman’s grievance more than the record.",
+            ]},
+            {"heading": "A container indifferent to its contents", "paragraphs": [
+                "Perhaps, Dean suggests, the masculinity worry is really a fear of losing individual specificity—the fear Fredric Jameson saw in reactions to utopia. Comrade insists on the equalizing sameness of those on the same side and frees people from identities imposed by patriarchal racial capitalism.",
+                "This does not make sexism vanish: Robin D. G. Kelley notes that white women comrades were often confined to the mimeograph machine. But comrade introduces another possibility and a standard by which old ways are judged. It is not the two of love—lovers look at each other, comrades look together at a horizon—and it has what Lacan calls a non-all structure: anyone, but not everyone.",
+            ], "callout": "Comrade doesn’t abolish the antagonism of sex; it lets another relation intrude and judge it."},
+        ],
+        "example": {"title": "Work it through: who washes the dishes?",
+                    "body": "Dean cites a 1930s case where a male communist was removed from leadership for refusing to help with childcare. The point is not that the party was a feminist utopia, but that being comrades gave women a standard to hold men to: in the party, men and women were supposed to be equals, and could be called to account when they were not."},
+        "distinction": "Dean’s history is deliberately selective and partisan. Historians of the CPUSA disagree about how far its commitments to women’s equality were practised, and the Inman case is still read in opposite ways (Dean sides with Weigand against the version repeated by Viewpoint Magazine in 2015). Keep the factual record and Dean’s interpretation apart.",
+        "source": {"label": "Comrade, ch. 2 · §§17–21 (Verso, 2019)", "url": B},
+        "furtherReading": {"label": "Clara Zetkin · Lenin on the Women’s Question (1920)", "url": MIA + "zetkin/1920/lenin/zetkin1.htm"},
+        "quiz": [
+            {"question": "What does Dean call her method in chapter two?",
+             "options": ["Dialectical materialist history", "Deconstructive genealogy",
+                         "Speculative-compositive: salvaging examples from their contexts for present struggles", "Comparative statistics"],
+             "answer": 2, "explanation": "She extracts examples and composes them into a case for the present rather than writing a linear history."},
+            {"question": "How did the party’s Avram Landy answer Inman’s claim that housework is productive labour?",
+             "options": ["Housework is useful, but Marxism is a theory of the exploitation of labour, not its usefulness",
+                         "Housework should be paid by the state",
+                         "Women should leave the home for factory work only",
+                         "Housework is not labour at all"],
+             "answer": 0, "explanation": "Landy granted usefulness but grounded women’s demands in their oppression as members of the working class."},
+        ],
+    },
+    {
+        "id": "black-comrade", "number": 8, "moduleId": "generic",
+        "title": "The Black Comrade", "eyebrow": "Chapter Two · The Black Comrade · §§22–25", "duration": 18,
+        "description": "Is the comrade white? Dean separates two suspicions and answers them through Lucy Parsons, Cyril Briggs, Wilderson and Claudia Jones—and through Briggs’s ‘acid test’ for white comrades.",
+        "objectives": [
+            "Name the two suspicions behind the worry that comrade is white",
+            "Describe Cyril Briggs’s synthesis of black nationalism and Leninism",
+            "Explain the ‘acid test’ and what it demanded of white communists",
+        ],
+        "sections": [
+            {"heading": "Two suspicions", "paragraphs": [
+                "The worry that comrade is white ignores communist and anticolonial struggles from India and Vietnam to South Africa and the United States, and a large scholarship on black communism. Dean breaks the US worry into two suspicions: that black people cannot be comrades with each other, and that black and white people cannot be comrades.",
+                "The first assumes a racial kinship that leaves no room for political division among black people—clearly false. Read another way, it points to a black radical tradition irreducible to Marxism. Dean accepts that tradition and asks why some of its figures turned to communism: Lucy Parsons put class first, and Cyril Briggs, founder of the Crusader and the African Blood Brotherhood, fused race-first politics with Leninist internationalism.",
+            ]},
+            {"heading": "Practising social equality", "paragraphs": [
+                "In Jabu’s retort to Stimela—‘Brother,’ not ‘comrade’—Wilderson records the anguish that comradeship might be a ruse that subordinates black interests. Yet he also recalls a Soviet man taking his hand in the 1970s and thinking that if communism would cleanse his hands, he was a communist. Ernest Rice McKinney remembered white youths in Pittsburgh calling an interracial group ‘comrades’ because communists were known for practising social equality.",
+                "Practice often fell short: in 1949 Claudia Jones called out comrades for failing to extend courtesy to black women and to bring them into leadership. Dean’s point is that the expectation itself—held even by non-communists—was radical egalitarianism extending into everyday life.",
+            ]},
+            {"heading": "Briggs’s acid test", "paragraphs": [
+                "Briggs warned that white ‘friendship’ had often been self-serving, yet argued that white workers needed black workers and that black and white had already fought together. He proposed an acid test: is a white person willing to see black people defend themselves with arms, even against white people? A 1932 organizer’s instructions told communists to be ready to die defending any black person’s rights.",
+                "Dean reads this as the condition of black–white comradeship: white communists had to give up their property in whiteness. Against narratives of manipulation and betrayal, she follows historians such as Kelley, Naison and Solomon in seeing the party, for a time, as the leading interracial organization against white supremacy.",
+            ], "callout": "Black–white comradeship required white comrades to prove they would defend black liberation to the end."},
+        ],
+        "example": {"title": "Work it through: the warehouse",
+                    "body": "Management offers a raise to one group of workers if they drop demands raised by another, more racialized group. Briggs’s point, translated: the white workers become comrades only by refusing the deal—by treating the others’ demands as their own even when it costs them. Solidarity is shown at the moment it is expensive."},
+        "distinction": "Some readers, including writers Dean mentions such as Richard Wright and Harold Cruse, told the CPUSA’s relation to black Americans as a story of manipulation and disillusion. Dean sides with historians who reject that story, but she also records failures. Hold both: the ideal Dean defends and the evidence about how far it was realized.",
+        "source": {"label": "Comrade, ch. 2 · §§22–25 (Verso, 2019)", "url": B},
+        "furtherReading": {"label": "Lenin · Draft Theses on National and Colonial Questions (1920)", "url": MIA + "lenin/works/1920/jun/05.htm"},
+        "quiz": [
+            {"question": "What is Dean’s response to the existence of a black radical tradition independent of Marxism?",
+             "options": ["She denies it exists",
+                         "She treats it as a branch of Marxism",
+                         "She says it proves comrade is a white concept",
+                         "She accepts it and asks how and why some black radicals turned to communism"],
+             "answer": 3, "explanation": "The tradition supports her argument by showing figures like Briggs taking up communism on their own terms."},
+            {"question": "What was Cyril Briggs’s ‘acid test’ for white people?",
+             "options": ["Whether they would join the African Blood Brotherhood",
+                         "Whether they would accept black people defending themselves with arms, even against white people",
+                         "Whether they could quote Lenin",
+                         "Whether they lived in Harlem"],
+             "answer": 1, "explanation": "The test measured commitment to black self-defence and liberation, not sympathy."},
+        ],
+    },
+    {
+        "id": "black-belt", "number": 9, "moduleId": "generic",
+        "title": "The Black Belt thesis", "eyebrow": "Chapter Two · The Black Belt Thesis · §§26–27", "duration": 16,
+        "description": "Dean calls the Comintern’s line on black self-determination ‘scandalous’—and defends it. It put the black comrade in the position of ego ideal for the whole party.",
+        "objectives": [
+            "State the Black Belt thesis and the nation-versus-race debate",
+            "Explain Haywood’s tactical argument for the self-determination line",
+            "Explain what it means that the black comrade became the party’s ego ideal",
+        ],
+        "sections": [
+            {"heading": "An oppressed nation?", "paragraphs": [
+                "After years of debate, the Comintern and the CPUSA adopted the position that black people in the Black Belt—a swathe of majority-black Southern counties—formed an oppressed nation with a right to self-determination. Dean calls the thesis scandalous because it is so often dismissed as dogmatic or absurd, and because it cuts against the assumption that communists subordinate everything to class.",
+                "Harry Haywood, its main architect, used Stalin’s four-part definition of a nation and a history running from slavery through the betrayal of Reconstruction to imperialism, which froze black Southerners in a landless, semi-slave position. Opponents, including black communists such as James Ford and Otto Hall, saw black Americans as an oppressed racial minority whose goal was assimilation; C. L. R. James also argued against the thesis.",
+            ]},
+            {"heading": "Why the line mattered tactically", "paragraphs": [
+                "Haywood argued that treating oppression as racial prejudice detached racism from its socio-economic roots and reduced the struggle to a campaign against bad attitudes. The self-determination line instead made the black freedom struggle a revolutionary movement in its own right, an equal partner of the workers’ struggle against a common enemy.",
+                "It also gave the party a position from which to fight white chauvinism: white workers’ class consciousness would be mere race consciousness unless they committed to abolishing Jim Crow and lynching. As Mark Solomon put it, it redefined black–white cooperation on the basis of new power relations among equals.",
+            ]},
+            {"heading": "The black comrade as ego ideal", "paragraphs": [
+                "For Dean, the thesis placed the black comrade in the position of ego ideal: white comrades now had to judge their actions as a black comrade would. The party ran self-criticism campaigns, cultivated black leaders, held public trials and expelled chauvinists, and refused concessions to segregation even at the price of isolation in the South.",
+                "She does not hide the cost. The campaign sometimes degenerated into fantastic accusations and was used in factional fights; the critical impulse turned on itself so fiercely that comradeship could look like an impossible ideal—a theme she returns to in chapter four.",
+            ], "callout": "Under racial capitalism, sameness has to be actively recomposed by confronting racism, not assumed."},
+        ],
+        "example": {"title": "Work it through: a union drive in a segregated town",
+                    "body": "In a town where black and white workers are kept apart, a union that treats racism as ‘a distraction from wages’ will lose black workers’ trust. One that makes ending segregation a core demand—even if some white workers walk—builds unity on new terms. That is the tactical logic Dean finds in Haywood."},
+        "distinction": "Dean is not asking readers to adopt a 1928 programme. She uses the Black Belt thesis as an example of comradeship that refused to subordinate black liberation to class struggle. Whether the national framing was correct remains disputed, among communists then and historians now.",
+        "source": {"label": "Comrade, ch. 2 · §§26–27 (Verso, 2019)", "url": B},
+        "furtherReading": {"label": "Harry Haywood · The Struggle for the Leninist Position on the Negro Question (1933)", "url": MIA + "haywood/1933/09/x01.htm"},
+        "quiz": [
+            {"question": "Why does Dean call the Black Belt thesis ‘scandalous’?",
+             "options": ["Because it was secret",
+                         "Because it is often dismissed as absurd and because it defies the idea that communists put class above every other struggle",
+                         "Because it was written by Stalin alone",
+                         "Because it called for black emigration to Africa"],
+             "answer": 1, "explanation": "Both its common dismissal and its challenge to workerism make it ‘scandalous’ in her sense."},
+            {"question": "What tactical danger did Haywood see in treating black oppression only as racial prejudice?",
+             "options": ["It would anger the Comintern",
+                         "It would make the party too radical",
+                         "It would reduce the struggle to a campaign against attitudes, detached from its economic roots",
+                         "It would split the Socialist Party"],
+             "answer": 2, "explanation": "He thought the prejudice framing led to a reformist struggle against bad ideas rather than against the system."},
+        ],
+    },
+]
